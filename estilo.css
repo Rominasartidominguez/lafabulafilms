@@ -1,0 +1,153 @@
+@import url('https://fonts.cdnfonts.com/css/minion-pro');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Minion Pro', sans-serif;
+}
+
+html {
+  font-size: clamp(16px, 1.9vw, 21px);
+}
+
+
+.contenedor-seccion {
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+
+h1, h2{
+  text-transform:uppercase;
+  }
+  
+  /* Offset de anchors */
+[id] {
+  scroll-margin-top: 56px;
+}
+  
+
+footer, nav{
+    background-color: #22312D;
+    color:#75A89B !important;
+}
+
+footer p, footer i{
+  font-size: 18px;
+  vertical-align:top;
+  color:#75A89B;
+}
+
+#mainNavbar ul li a{
+  font-size: 18px ;
+  color: #75A89B;
+}
+#mainNavbar ul li a:hover{
+  color: aliceblue;
+}
+
+footer i:hover{
+  color: aliceblue;
+}
+
+#encabezado img{
+  margin-top: 150px;
+}
+
+#encabezado, #trailer, #galeria, #prensa, #productoras,#contacto{
+    background: url(imagenes/fondoweb.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+
+#sinopsis, #equipo, #casas, #monarca, #insumisa, #pajaro, #entrevistas, #trailer h4 {
+    background-color: #75A89B;
+    color: aliceblue;
+}
+
+#intencion, #directora, #premios{
+    background-color: #22312D;
+    color: aliceblue;
+}
+#premios ul li {
+  
+    font-style: oblique;
+}
+
+#premios i{
+    font-size: 60px;
+    color: #75A89B;
+
+}
+
+#premios li i{
+  color: aliceblue;
+  font-size: clamp(14px, 1.1vw, 21px)
+  
+}
+
+
+
+/* Botón base */
+ .btn {
+    color: aliceblue;
+    padding: 5px 0;
+    text-align: left;
+  
+  }
+  .btn:hover {
+    color:#22312D;
+  }
+
+  #listadirec :hover{
+    color: #75A89B;
+  }
+
+  /* Añade la flecha antes del texto del botón */
+#lista .btn::before {
+    content: "› ";       /* flecha y espacio */
+    color:aliceblue;      /* color de la flecha */
+    font-size: 0.9em;    /* ajustar si hace falta */
+  }
+  
+  /* Cuando el panel está abierto, invertir la flecha (opcional) */
+  #lista .btn[aria-expanded="true"]::before {
+    content: "› ";
+  }
+  
+  /* Panel colapsable */
+  #lista .collapse {
+    background-color: rgba(34, 49, 45, 0.2);
+    padding: 10px;
+  
+  }
+  
+  /* Hover */
+  #lista .btn:hover {
+    color:#22312D;
+  }
+  
+  /* Cuando el collapse está abierto */
+  #lista .btn[aria-expanded="true"] {
+    color:#22312D;    /* el color que quieras para el título activo */
+    font-weight: bold; /* opcional, para destacarlo */
+  }
+
+
+
+
+#monarca a i, #insumisa a i, #pajaro a i{
+  font-size: 0.9em;
+}
+
+.formulario{
+  max-width: 450px;
+}
+
+body {
+    background-color: #22312D;
+}
+
+

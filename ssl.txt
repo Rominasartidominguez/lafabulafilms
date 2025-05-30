@@ -1,0 +1,7 @@
+Veo que tu archivo .htaccess aún tiene las reglas de redirección a www.lafabuladelatortugaylaflor.com, pero no está forzando HTTPS en todas las conexiones.
+
+Para asegurarte de que todos los accesos sean https://, puedes modificarlo agregando este código antes de las reglas existentes:
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
